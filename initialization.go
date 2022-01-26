@@ -7,7 +7,7 @@ import (
 )
 
 func Init_migration() {
-	db, err := gorm.Open("sqlite3", "stockc.db")
+	db, err := gorm.Open("sqlite3", "inventory.db")
 	if err != nil {
 		log.Fatal("Error connecting to database: ", err)
 	}
