@@ -10,7 +10,7 @@ import (
 )
 
 func Create_item(w http.ResponseWriter, r *http.Request) {
-	db, err := gorm.Open("sqlite3", "stocks.db")
+	db, err := gorm.Open("sqlite3", "inventory.db")
 	if err != nil {
 		log.Fatal("Couldn't conect to database...")
 	}
@@ -28,7 +28,7 @@ func Create_item(w http.ResponseWriter, r *http.Request) {
 }
 
 func Get_item(w http.ResponseWriter, r *http.Request) {
-	db, err := gorm.Open("sqlite3", "stocks.db")
+	db, err := gorm.Open("sqlite3", "inventory.db")
 	if err != nil {
 		log.Fatal("Couldn't conect to database...")
 	}
@@ -51,7 +51,7 @@ func Get_item(w http.ResponseWriter, r *http.Request) {
 }
 
 func Update_item(w http.ResponseWriter, r *http.Request) {
-	db, err := gorm.Open("sqlite3", "stocks.db")
+	db, err := gorm.Open("sqlite3", "inventory.db")
 	if err != nil {
 		log.Fatal("Couldn't conect to database...")
 	}
@@ -77,7 +77,7 @@ func Update_item(w http.ResponseWriter, r *http.Request) {
 }
 
 func Delete_item(w http.ResponseWriter, r *http.Request) {
-	db, err := gorm.Open("sqlite3", "stocks.db")
+	db, err := gorm.Open("sqlite3", "inventory.db")
 	if err != nil {
 		log.Fatal("Couldn't conect to database...")
 	}
